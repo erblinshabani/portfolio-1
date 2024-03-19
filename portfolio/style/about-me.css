@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    color: #051b86;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 2px 10px rgba(17, 17, 17, 0.052);
+}
+
+nav h2 {
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 12px;
+    color: rgb(0, 26, 158)
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 95vh;
+    padding-bottom: 60px;
+    background: #fff;
+}
+
+
+.intro-info {
+    width: 70%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    height: 50px;
+}
+
+.intro-info h2 {
+    margin-top: 0;
+}
+
+.intro-info span {
+    color:#3e497a; 
+}
+    
+.skills {
+    background-color: #253969;
+    color: #f0f0f0;
+    display: flex;
+    padding: 100px 50px;
+    flex-direction: column;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills-title {
+    font-size: 31px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 80px;
+    color: #e9d35b;
+}
+
+.skills-card p {
+    font-size: 20px;
+}
+
+.skills-card:hover {
+    color: #e9d35b;
+    transition: all ease-in 0.01s;
+}
+
+.about-me {
+    padding: 150px 50px;
+    background: linear-gradient(#253969, #7780e0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: rgb(252, 189, 44);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.about-me-img img{
+    width: 300px;
+    margin: 100px auto 80px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-description {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    border: 1px solid rgba(4, 4, 76, 0.877);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px #0233773a;
+    cursor: pointer;
+}
+
+.about-me-description h2, .about-me-description p {
+    padding: 0 20px;
+}
+ 
+.about-me-description:hover {
+    background-color: #023377ed;
+    transition: all ease 0.2s;
+}
+
+.projects {
+    padding: 50px 0;
+    background: linear-gradient(#7780e0, #fff);
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.project-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(128, 128, 128, 0.37);
+    width: 80%;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-card-img {
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.netflix-img {
+    background: url("../assets/netflix.png");
+}
+.social-media-img {
+    background: url("../assets/social-media.png");
+}
+.digital-music-img {
+    background: url("../assets/spotify.jpg");
+}
+
+.project-card-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-card h3 {
+    padding-left: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #fff;
+    padding: 200px 0;
+}
+
+footer h3 {
+    opacity: 0.85;
+}
+
+footer h2 {
+    font-size: 31px;
+    margin-top: 0;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer input {
+    margin-top: 20px;
+    width: 230px;
+    border-radius: 7px;
+    border: 1px solid rgb(32, 32, 32);
+    height: 32px;
+    padding: 0 20px;
+
+    outline: 0;
+    font-size: 18px;
+}
+
+.footer-form input:focus  {
+    /* background-color: red; */
+    border: 1px solid blue;
+
+}
+
+.submit-button {
+    width: 150px;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 19px;
+    margin-top: 23px;
+    background-color:#010e52;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color:#041b8b;
+    transition: all ease 0.2s;
+}
+
+@media only screen and (min-width: 700px) {
+    .intro-info {
+        text-align: center;
+    }
+
+    .about-me-img img{
+        width: 350px;
+     }
+
+    .about-me-description {
+        width: 80%;
+    }
+    
+    .intro-info h2{
+        font-size: 39px;
+    }
+
+    .intro-info p {
+        margin: 0 auto;
+        width: 70%;
+        font-size: 22px;
+    }
+    
+    .skills {
+        padding: 50px 20%;
+    }
+
+    .projects h2 {
+        font-size: 30px;
+        font-family: cursive;
+    }
+    
+    .project-cards {
+        margin-top: 80px;
+    }
+
+    .project-card {
+        width: 40%;
+        margin: 30px;
+    }
+
+    .project-card:hover {
+        margin-top: 3px;
+        transition: all ease 0.2s;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .about-me {
+        flex-direction: row;
+    }
+
+    .about-me-description {
+        width: 500px;
+        margin: 0;
+        padding: 5px 24px 10px 24px;
+    }
+
+    .intro-info h2{
+        font-size: 43px;
+    }
+
+    .intro-info p {
+        font-size: 25px;
+    }
+    
+    .project-card {
+        width: 350px;
+        margin: 50px;
+    }
+
+    footer h3 {
+        font-size: 23px;
+        margin-bottom: 13px;
+    }
+
+    footer h2 {
+        font-size: 42px;
+    }
+    
+    .footer-form {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 15px;
+        height: 40px;
+        border: 1px solid rgb(32, 32, 32);
+        border-radius: 0 3px 3px 0;
+    }
+
+    footer input {
+        margin-top: 0px;
+        width: 440px;
+        height: 100%;
+        border-radius: 0px;
+        border: 0;
+        padding: 0 20px;
+    
+        font-size: 20px;
+    }
+
+    .footer-form button {
+        margin: 0;
+        border: 0;
+        border-radius: 0 3px 3px 0;
+        height: 100%;
+    }
+}
